@@ -34,7 +34,7 @@ module.exports = function (grunt) {
           preserveLineBreaks: false                       
      },
      files: {
-        src: './index.html',
+        src: 'dist/index.html',
         dest: 'dist/index.html'                         
      }     
    },
@@ -44,8 +44,7 @@ module.exports = function (grunt) {
    uglify: {
      release:{
        files: {
-        'dist/rectangle.js': 'rectangle.js',
-        'dist/calc.js': 'calc.js'                              
+        'dist/bundle.min.js': 'dist/bundle.js',                     
        }           
      }
    }  
@@ -58,8 +57,13 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-usemin');
+  grunt.loadNpmTasks('grunt-contrib-clean');
+
 
   grunt.registerTask('default', ['htmlhint', 'csslint', 'eslint']);
   grunt.registerTask('unitTest', ['mocha']);
-  grunt.registerTask('minify', ['htmlmin', 'cssmin', 'uglify']);
+  grunt.registerTask('release', ['copy', 'useminPrepare', 'concat', 'uglify', 'usemin', 'cssmin', 'htmlmin', 'clean']);
 };

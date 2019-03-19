@@ -5,6 +5,9 @@
   "main": "rectangle.js",
   "dependencies": {
     "grunt": "^1.0.3",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-csslint": "^2.0.0",
     "grunt-contrib-cssmin": "^3.0.0",
     "grunt-contrib-htmlmin": "^3.0.0",
@@ -12,7 +15,8 @@
     "grunt-eslint": "^21.0.0",
     "grunt-htmlhint": "^0.9.13",
     "grunt-mocha": "^1.2.0",
-    "grunt-mocha-cli": "^4.0.0"
+    "grunt-mocha-cli": "^4.0.0",
+    "grunt-usemin": "^3.1.1"
   },
   "devDependencies": {},
   "scripts": {
