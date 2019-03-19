@@ -7,7 +7,9 @@
     "grunt": "^1.0.3",
     "grunt-contrib-csslint": "^2.0.0",
     "grunt-eslint": "^21.0.0",
-    "grunt-htmlhint": "^0.9.13"
+    "grunt-htmlhint": "^0.9.13",
+    "grunt-mocha": "^1.2.0",
+    "grunt-mocha-cli": "^4.0.0"
   },
   "devDependencies": {},
   "scripts": {
