@@ -1,19 +1,26 @@
-div {
+.rectangle{
   font-size: 1.1em;
   margin: 50px auto;
   width: 370px;
 }
 
-input, label {
+input, label,span {
   font-size: 1em;
   margin: 5px 0;
   padding-left: 5px;
 }
 
+#rectangle-calc {
+  width: 70px;
+  margin-left: 63px;
+}
+
 span {
   color: red;
 }
-#calculate {
-  margin-left: 63px;
-  width: 70px;
+
+#rectangle-width-validate,#rectangle-height-validate {
+    color: red;
+    margin-left: 63px;
+    font-size: 0.8em;
 }
